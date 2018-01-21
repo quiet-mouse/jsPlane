@@ -1,0 +1,366 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url("../img/bBg1.jpg") no-repeat;
+	background-size: 100% 100%; 
+	height: 850px;
+	overflow: hidden;
+}
+
+#box{
+	height: 500px;
+	width: 300px;
+	border: 5px solid #3f4f8e;
+	margin: 50px auto;
+	position: relative;
+	background-image: url("../img/map_bg0.png");
+	background-repeat: repeat-y;
+	background-size: cover;
+	animation: Bgmove 7s linear 0s infinite;
+}
+@keyframes Bgmove{
+	25%{
+		background-position: 0px 133px;
+	}
+	50%{
+		background-position: 0px 265px;
+	}
+	75%{
+		background-position: 0px 398px;
+	}
+	100%{
+		background-position: 0px 530px;
+	}
+}
+
+#Msg{
+	position: absolute;
+	top: 190px;
+	left: 20px;
+	width: 400px;
+}
+
+#show p{
+	width: 170px;
+	height: 30px;
+	float: left;
+	margin: 10px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	background: url("../img/btn.png") no-repeat;
+	background-size: 100% 100%;
+	font-size: 12px;
+}
+
+#Msg #show{
+	display: block;
+}
+
+#show::after{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+#Msg #ChangeBg{
+	margin: 10px;
+	width: 170px;
+	height: 50px;
+	background: url("../img/btn.png") no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+#Msg #ChangeBg:hover{
+	color: #41d2fd;
+	letter-spacing: 1px;
+}
+
+#Msg #ChangeCg{
+	margin: 10px;
+	width: 170px;
+	height: 50px;
+	background: url("../img/btn.png") no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+#Msg #ChangeCg:hover{
+	color: #41d2fd;
+	letter-spacing: 1px;
+}
+
+#hide{
+	width: 370px;
+	height: 45px;
+	margin: 10px 5px 5px 5px;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	background: url("../img/btn.png") no-repeat;
+	background-size: 100% 100%;
+	line-height: 45px;
+	font-size: 18px;
+}
+#hide:hover{
+	color: #41d2fd;
+	letter-spacing: 1px;
+}
+
+#Msg::after{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+#Msg div{
+	float: left;
+}
+
+#GameExp{
+	position: absolute;
+	background: url("../img/oMsg.png") no-repeat;
+	background-size: 100% 100%;
+	width: 380px;
+	height: 180px;
+	color: #fff;
+	font-size: 13px;
+	right: 20px;
+	top: 150px;
+}
+#GameExp p{
+	margin-top: 85px;
+	margin-left: 25px;
+	line-height: 25px;
+}
+
+#sg{
+	position: absolute;
+	background: url("../img/gMsg.png") no-repeat;
+	background-size: 100% 100%;
+	width: 380px;
+	height: 220px;
+	color: #fff;
+	font-size: 13px;
+	right: 20px;
+	top: 350px;
+}
+#sg p:first-child{
+	margin-top: 95px;
+	margin-left: 25px;
+	line-height: 20px;
+}
+#sg p:last-child{
+	margin-left: 55px;
+	line-height: 20px;
+}
+
+
+#open{
+  	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.55);
+}
+
+#choose{
+	position: absolute;
+	top: 200px;
+	height: 280px;
+	width: 520px;
+	left: 50%;
+	margin-left: -260px;
+	background: url('../img/choose.png') no-repeat;
+	background-size: 100% 100%;
+}
+
+#choose li{
+	float: left;
+	width: 150px;
+	height: 150px;
+	margin: 55px 48px;
+	background: url('../img/bg-1.png') no-repeat;
+	animation: moveImg 4s linear 0s infinite;
+}
+@keyframes moveImg{
+	25%{transform: rotate(90deg);}
+	50%{transform: rotate(180deg);}
+	75%{transform: rotate(270deg);}
+	100%{transform: rotate(360deg);}
+}
+
+#choose li img{
+	cursor: pointer;
+	animation: cancelMove 4s linear 0s infinite;
+}
+@keyframes cancelMove{
+	25%{transform: rotate(-90deg);}
+	50%{transform: rotate(-180deg);}
+	75%{transform: rotate(-270deg);}
+	100%{transform: rotate(-360deg);}
+}
+
+.title{
+	color: white;
+	text-align: center;
+	margin-top: 45px;
+}
+
+#box p{
+	color: white;
+	background: #c15632;
+	width: 200px;
+	height: 35px;
+	border-radius: 20px;
+	border: 3px solid #fff;
+	text-align: center;
+	line-height: 35px;
+	margin: 50px auto;
+	font-weight: bold;
+	font-family:"microsoft yahei";
+  	cursor:pointer; 
+}
+
+#box p:hover{
+	background: white;
+	color: black;
+	border: 3px solid #0c6498;
+	transition: all 1s ease-out;
+}
+
+#box .plane{
+	position: absolute;
+}
+
+#box .bull{
+	position: absolute;
+}
+
+#box .enemy{
+	position:absolute;
+}
+
+#box .boom{
+	position:absolute;
+}
+
+#box .planeP{
+    border-width: 2px 1px;
+    border-style: solid;
+    border-color: #fff #f15 #148fe6 #5d0473;
+    border-radius: 50%;
+}
+
+/* Boss */
+#box .Boss{
+    position:absolute;
+    top:20px;
+    left:50%;
+    margin-left:-75px;
+    width:150px;
+    height:110px;
+}
+
+#box .Boss img{
+	position:absolute;
+}
+
+#box .Boss .main{
+    width:75px;
+    height:110px;
+    left:37px;
+}
+#box .Boss .left{
+    width:37px;
+    height:110px;
+    left:0;
+    animation:moveLeft 2s both;
+}
+@keyframes moveLeft{
+    from{left:0;}
+    to{left:10px;}
+}
+#box .Boss .right{
+    width:37px;
+    height:110px;
+    right:0;
+    animation:moveRight 2s both;
+}
+@keyframes moveRight{
+    from{right:0;}
+    to{right:10px;}
+}
+#box .Boss .blood{
+	position:absolute;
+	top:-10px;
+	width:150px;
+	height:5px;
+	border:1px solid red;
+	border-radius:2px;
+	background:url('../img/Boss/boss_blood.png') no-repeat 0 0;
+	background-size:100% 5px;
+}
+#box .boss_boom{
+	position:absolute;
+}
+/*Boss子弹*/
+#box .Boss_bull{
+	position:absolute;
+	border-radius:50%;
+}
+#box .boom_bull{
+	position:absolute;
+}
+
+/*结束页面部分*/
+#box .warp{
+	width:100%;
+	height:100%;
+	border:1px solid transparent;
+	background:rgba(0,0,0,0.7);
+}
+
+#box .warp h2{
+	margin:20px 0 20px;
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+}
+
+#box .warp div{
+	margin:auto;
+	width:200px;
+	height:50px;
+	background:#fff;
+	color:#F60;
+	font-size:16px;
+	text-align:center;
+	line-height:50px;
+	opacity:0.7;
+}
+
+#box .warp i{
+	position:absolute;
+	top:300px;
+	left:50%;
+	margin-left:-50px;
+	width:100px;
+	height:30px;
+	border:1px solid #d500ff;
+	color:#fff;
+	font-size:16px;
+	font-weight: bold;
+	text-align:center;
+	line-height:30px;
+	background:#4878d0;
+	cursor:pointer;
+}

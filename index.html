@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>响应式界面的飞机大战</title>
+	<link rel="stylesheet" type="text/css" href="./css/yangshi.css">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+</head>
+<body style='user-select:none;'>
+	<audio id="BgMusic" src="./music/BGM1.mp3" autoplay="autoplay" loop="loop"></audio>
+
+	<div id="box"></div>
+
+	<div id="Msg">
+		<div id="ChangeBg">更改背景</div>
+		<div id="ChangeCg">更改场景</div>
+		<div id="hide">点击隐藏/显示作战信息</div>
+		<div id="show">			
+			<p>当前战斗机： 瓜皮战斗机</p>
+			<p>防空求助： 剩余10次</p>
+			<p>子弹生成速度： 300ms/个</p>
+			<p>当前子弹个数： 0颗</p>
+			<p>已发射子弹数量： 0颗</p>
+			<p>当前敌军数量： 0个</p>
+			<p>已消灭敌军数量： 0个</p>
+			<p>当前分数： 0分</p>
+			<p>当前X坐标： 0</p>
+			<p>当前Y坐标： 0</p>
+		</div>
+	</div>
+
+	<div id="GameExp">
+		<p>
+			1.按空格即可触发防空求助<br/>
+			2.击杀Boss加150000分<br/>
+			3.按Enter键请求增加防空求助
+		</p>
+	</div>
+
+	<div id="sg">
+		<p>欢迎来到小游戏<br/></p>
+		<p>
+		    游戏只需移动鼠标让子弹飞向敌军即可!<br/>
+			适当时候启动防空求助能帮你扫除大批敌军哦!<br/>
+		</p>
+	</div>
+
+	<script type="text/javascript" src="./js/main1.js"></script>
+
+</body>
+</html>
